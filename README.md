@@ -1,11 +1,54 @@
-# Products Api
-
-### Resource Group: PlaygroundRG
-
-### Function App: [Static WebApp-Api](https://static-webapp-api.azurewebsites.net/)
-
-### Storage  Account: [poducts](https://portal.azure.com/#@azureredopal.onmicrosoft.com/resource/subscriptions/3d2f6870-ef42-4a17-8d4b-02f69f6230bd/resourcegroups/PlaygroundRG/providers/Microsoft.Storage/storageAccounts/poducts/overview)
-
-### Storage  Container: [products](https://portal.azure.com/#blade/Microsoft_Azure_Storage/ContainerMenuBlade/overview/storageAccountId/%2Fsubscriptions%2F3d2f6870-ef42-4a17-8d4b-02f69f6230bd%2Fresourcegroups%2FPlaygroundRG%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fpoducts/path/products/etag/%220x8D9406B339DD64A%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride//defaultId//publicAccessVal/None)
+# Products CRUD Api
 
 
+##  Prerequisite Tools:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [TypeScript](https://www.typescriptlang.org/download)
+- [VSCode Azure Functions extension](https://github.com/Microsoft/vscode-azurefunctions)
+- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools)
+- [Postman](https://www.postman.com/)
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) / Optional
+- [Azurite](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite) / Optional
+
+
+ - name of the Azure Storage container **products**
+
+
+# :clipboard:  GET STARTED
+
+1. Clone repo
+    ```sh
+    https://github.com/tom-kotlar/Blob-Storage-CRUD.git
+   ```
+1. NPM install dependencies
+
+   ```sh
+    npm install
+   ```
+1. Download Remote Settings
+   ```sh
+    Navigate to Azure extentnion > Resources > Subscription > Function App > Choose the Function App > Right Click on Application Settings
+   ```
+
+1. Change **AZURE_STORAGE_CONNECTION_STRING**
+
+    ```bash
+    local.settings.json
+    ```
+    - The **Connection string** Can be find on Storage Blade >  Access keys
+
+1. Change **STORAGE_CONTAINER_NAME**
+    ```bash
+    local.settings.json
+    ```
+    - Your Development Storage Container name 
+
+1. Upload Local Settings
+
+   ```sh
+    Navigate to Azure extentnion > Resources > Subscription > Function App > Choose the Function App > Right Click on Application Settings
+   ```
+
+
+---
