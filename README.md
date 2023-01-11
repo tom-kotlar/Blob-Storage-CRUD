@@ -1,4 +1,4 @@
-# Products CRUD Api
+# Azure Storage CRUD Api
 
 
 ##  Prerequisite Tools:
